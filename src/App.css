@@ -1,33 +1,193 @@
-.App {
-  text-align: center;
+body {
+  overflow-x: hidden;
+  background-color: #E3E8EB !important;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+button:focus {
+  outline:none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left {
+  background-color: #2A58AD;
+  height: 100%;
+}
+.small-profile {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid green;
+  background-size: cover;
+  background-image: url('./images/man.jpg');
+}
+
+.position {
+  color: #2585CF;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.update {
+  background-color: transparent;
+  color: #FFFFFF;
+  border-radius: 30px;
+  border: 2px solid #2585CF;
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+.dashboard {
+  box-sizing: border-box;
+  border-left: 5px solid #2A58AD;
+  padding: 35px;
+  cursor: pointer;
+}
+
+.dashboard-icon {
+  color: #A1B8D7;
+  font-size: 45px;
+}
+
+.dash-link {
+  color: #A1B8D7;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.dashboard:hover, .active {
+  border-left: 5px solid #24B5F4;
+  background-color: #1D4C9E;
+}
+
+.dashboard:hover .dashboard-icon {
+  color: #FFFDFE;
+}
+
+.dashboard:hover .dash-link {
+  color: #FFFDFE;
+}
+
+.link {
+  font-size: 18px;
+  font-weight: bold;
+  color: #042342 !important;
+  border-bottom: 3px solid #ffffff;
+}
+
+.link:hover {
+  color: #079FEA !important;
+  border-bottom: 3px solid #079FEA;
+}
+
+.search {
+  margin-right: 200px;
+  color: #92A6B1;
+  font-size: 20px;
+}
+
+.icon {
+  color: #99ACB3;
+  font-size: 20px;
+}
+
+.quantity {
+  width: 17px;
+  height: 17px;
+  background-color: #079FEA;
+  color: #FFFFFF;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 13px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  padding: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.small-nav {
+  border-bottom: 2px solid #DBE0E4;
+}
+
+.small-nav ul li {
+  margin-right: 30px
+}
+
+.small-nav ul li a {
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #6F818F;
+  border-bottom: 2px solid #E3E8EB;
+}
+
+.small-nav ul li a:hover {
+  color: #22A8F1;
+  border-bottom: 2px solid #22A8F1;
+}
+
+.blue {
+  color: #22A8F1;
+}
+
+.rect {
+  text-align:center;
+  padding: 20px 0;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.small-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url('./images/man.jpg');
+  margin: 0px auto 10px auto;
+}
+
+.icon-div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #E9EEF1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.icon-div a {
+  color: #8398B5;
+  font-size: 20px;
+}
+
+.for-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.green-button {
+  padding: 3px 10px;
+  background-color: #68BB2F;
+  border-radius: 30px;
+  border: none;
+  color: #ffffff;
+}
+
+.blue-button {
+  padding: 3px 10px;
+  background-color: #22A8F1;
+  border-radius: 30px;
+  border: none;
+  color: #ffffff;
+}
+
+.dots {
+  font-size: 25px;
 }
