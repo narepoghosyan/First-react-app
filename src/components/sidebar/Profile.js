@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Profile extends Component {
 	state = {
 		name: 'Devinder Kumar',
-		position: 'Chief officer'
+		position: 'Chief officer',
 	}
 	render(){
 		return (
